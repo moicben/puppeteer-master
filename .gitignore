@@ -3,8 +3,7 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+
 
 # testing
 /coverage
@@ -35,6 +34,5 @@ yarn-error.log*
 .netlify
 
 # cookies and .png
-*.png
-*.jpg
+
 #/cookies
