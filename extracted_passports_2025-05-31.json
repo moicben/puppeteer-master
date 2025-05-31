@@ -1,0 +1,912 @@
+{
+  "summary": {
+    "processed": 16,
+    "errors": 3,
+    "startIndex": 0,
+    "totalTime": "113.75",
+    "processedAt": "2025-05-31T22:30:49.954Z"
+  },
+  "results": [
+    {
+      "originalFilename": "1.webp",
+      "newFilename": "saida-hammouch-ep-el-houfia.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\saida-hammouch-ep-el-houfia.webp",
+      "analysis": {
+        "surname": "HAMMOUCH ép. EL HOUFIA",
+        "givenNames": [
+          "Saida"
+        ],
+        "firstGivenName": "Saida",
+        "birthDate": "28 04 1971",
+        "birthPlace": "EL KALA MIZAB, M'TIOUA",
+        "country": "FRA",
+        "documentNumber": "13CA15710",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "03 07 2023",
+        "issueDate": "04 07 2013",
+        "issuingState": "Préfecture des Hauts-de-Seine NANTERRE",
+        "rue": "4 RUE DES VIEILLES VIGNES",
+        "codePostal": "92400",
+        "ville": "COURBEVOIE",
+        "mrz1": "P<FRAHAMMOUCH<SAIDA<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "13CA15710FRA7704282F2307035<<<<<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Saida",
+        "lastName": "HAMMOUCH ép. EL HOUFIA",
+        "birthDate": "28 04 1971",
+        "birthPlace": "EL KALA MIZAB, M'TIOUA",
+        "address": "4 RUE DES VIEILLES VIGNES",
+        "postalCode": "92400",
+        "city": "COURBEVOIE",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "13CA15710",
+        "expiryDate": "03 07 2023",
+        "issueDate": "04 07 2013",
+        "issuingState": "Préfecture des Hauts-de-Seine NANTERRE",
+        "mrz1": "P<FRAHAMMOUCH<SAIDA<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "13CA15710FRA7704282F2307035<<<<<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:29:02.404Z",
+      "processingIndex": 1
+    },
+    {
+      "originalFilename": "119775574_o.jpg",
+      "newFilename": "georges-costantin.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\georges-costantin.jpg",
+      "analysis": {
+        "surname": "COSTANTIN",
+        "givenNames": [
+          "Georges"
+        ],
+        "firstGivenName": "Georges",
+        "birthDate": "04 04 1945",
+        "birthPlace": "GRASSE",
+        "country": "FRA",
+        "documentNumber": "16AK73447",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "08 03 2026",
+        "issueDate": "09 03 2016",
+        "issuingState": "Préfecture du Var TOULON",
+        "rue": "700 CHEMIN DU COUTELET COUTELET",
+        "codePostal": "83300",
+        "ville": "DRAGUIGNAN",
+        "mrz1": "P<FRACOSTANTIN<<GEORGES<<<<<<<<<<<<<<<<",
+        "mrz2": "16AK734476FRA4504045M2603081<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Georges",
+        "lastName": "COSTANTIN",
+        "birthDate": "04 04 1945",
+        "birthPlace": "GRASSE",
+        "address": "700 CHEMIN DU COUTELET COUTELET",
+        "postalCode": "83300",
+        "city": "DRAGUIGNAN",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "16AK73447",
+        "expiryDate": "08 03 2026",
+        "issueDate": "09 03 2016",
+        "issuingState": "Préfecture du Var TOULON",
+        "mrz1": "P<FRACOSTANTIN<<GEORGES<<<<<<<<<<<<<<<<",
+        "mrz2": "16AK734476FRA4504045M2603081<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:29:10.582Z",
+      "processingIndex": 2
+    },
+    {
+      "originalFilename": "2.webp",
+      "newFilename": "patrick-bonhomme.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\patrick-bonhomme.webp",
+      "analysis": {
+        "surname": "BONHOMME",
+        "givenNames": [
+          "Patrick",
+          "Robert",
+          "Marcel",
+          "Leon"
+        ],
+        "firstGivenName": "Patrick",
+        "birthDate": "30 08 1961",
+        "birthPlace": "Clichy",
+        "country": "FRA",
+        "documentNumber": "11CK15284",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "09 08 2021",
+        "issueDate": "10 08 2011",
+        "issuingState": "Sous-Préfecture de LE HAVRE",
+        "rue": "33, RUE GUSTAVE NICOLLE",
+        "codePostal": "76400",
+        "ville": "FECAMP",
+        "mrz1": "P<FRABONHOMME<<PATRICK<ROBERT<MARCEL<LEON<<<<<<<<<<<<<",
+        "mrz2": "11CK15284FRA4904302M2108092<<<<<<<<<<<<<<04",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Patrick",
+        "lastName": "BONHOMME",
+        "birthDate": "30 08 1961",
+        "birthPlace": "Clichy",
+        "address": "33, RUE GUSTAVE NICOLLE",
+        "postalCode": "76400",
+        "city": "FECAMP",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "11CK15284",
+        "expiryDate": "09 08 2021",
+        "issueDate": "10 08 2011",
+        "issuingState": "Sous-Préfecture de LE HAVRE",
+        "mrz1": "P<FRABONHOMME<<PATRICK<ROBERT<MARCEL<LEON<<<<<<<<<<<<<",
+        "mrz2": "11CK15284FRA4904302M2108092<<<<<<<<<<<<<<04"
+      },
+      "processedAt": "2025-05-31T22:29:15.962Z",
+      "processingIndex": 3
+    },
+    {
+      "originalFilename": "20161017_204208.jpg",
+      "newFilename": "marie-cormier.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\marie-cormier.jpg",
+      "analysis": {
+        "surname": "CORMIER",
+        "givenNames": [
+          "MARIE",
+          "THERESE",
+          "GERMAINE"
+        ],
+        "firstGivenName": "MARIE",
+        "birthDate": "14 05 1948",
+        "birthPlace": "RAGHOUT",
+        "country": "MARION",
+        "documentNumber": "15CC420703",
+        "nationality": "FRA",
+        "sex": "F",
+        "expiryDate": "14 07 2023",
+        "issueDate": "",
+        "issuingState": "FRA",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRA<CORMIER<<MARIE<THERESE<GERMAINE<<<<<<<<<<<<<",
+        "mrz2": "15CC420703FRA5002238F2507145<<<<<<<<<<<<<<04",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "MARIE",
+        "lastName": "CORMIER",
+        "birthDate": "14 05 1948",
+        "birthPlace": "RAGHOUT",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "MARION",
+        "nationality": "FRA",
+        "sex": "F",
+        "documentNumber": "15CC420703",
+        "expiryDate": "14 07 2023",
+        "issueDate": "",
+        "issuingState": "FRA",
+        "mrz1": "P<FRA<CORMIER<<MARIE<THERESE<GERMAINE<<<<<<<<<<<<<",
+        "mrz2": "15CC420703FRA5002238F2507145<<<<<<<<<<<<<<04"
+      },
+      "processedAt": "2025-05-31T22:29:20.168Z",
+      "processingIndex": 4
+    },
+    {
+      "originalFilename": "3.webp",
+      "newFilename": "damien-olivier.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\damien-olivier.webp",
+      "analysis": {
+        "surname": "OLIVIER",
+        "givenNames": [
+          "Damien",
+          "Xavier",
+          "Michel"
+        ],
+        "firstGivenName": "Damien",
+        "birthDate": "01/12/1978",
+        "birthPlace": "BERNAY",
+        "country": "FRA",
+        "documentNumber": "15CC563355",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "16/07/2035",
+        "issueDate": "16/07/2015",
+        "issuingState": "PREFECTURE DE LA SOMME AMIENS",
+        "rue": "8 RUE DE BLANQUINE",
+        "codePostal": "80500",
+        "ville": "SAINT-FUSCIEN",
+        "mrz1": "P<FRAOLIVIER<<DAMIEN<XAVIER<MICHEL<<<<<<<<<<",
+        "mrz2": "15CC563550FRA7812019M2507156<<<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Damien",
+        "lastName": "OLIVIER",
+        "birthDate": "01/12/1978",
+        "birthPlace": "BERNAY",
+        "address": "8 RUE DE BLANQUINE",
+        "postalCode": "80500",
+        "city": "SAINT-FUSCIEN",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "15CC563355",
+        "expiryDate": "16/07/2035",
+        "issueDate": "16/07/2015",
+        "issuingState": "PREFECTURE DE LA SOMME AMIENS",
+        "mrz1": "P<FRAOLIVIER<<DAMIEN<XAVIER<MICHEL<<<<<<<<<<",
+        "mrz2": "15CC563550FRA7812019M2507156<<<<<<<<<<08"
+      },
+      "processedAt": "2025-05-31T22:29:26.069Z",
+      "processingIndex": 5
+    },
+    {
+      "originalFilename": "5A6CB321467C44939971CF19FD573CED.jpg",
+      "newFilename": "philippe-allart.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\philippe-allart.jpg",
+      "analysis": {
+        "surname": "ALLART",
+        "givenNames": [
+          "Philippe",
+          "Liboire"
+        ],
+        "firstGivenName": "Philippe",
+        "birthDate": "14 03 1967",
+        "birthPlace": "PAU",
+        "country": "FRANCE",
+        "documentNumber": "12AI6077",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "28 02 2022",
+        "issueDate": "27 02 2022",
+        "issuingState": "Préfecture du Gers AUCH",
+        "rue": "32 AVENUE DU MIDOUR",
+        "codePostal": "32110",
+        "ville": "NOGARO",
+        "mrz1": "P<FRAALLART<PHILIPPE<LIBOIRE<<<<<<<<<<<<<<",
+        "mrz2": "12AI601772FRA6703141M2202277<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Philippe",
+        "lastName": "ALLART",
+        "birthDate": "14 03 1967",
+        "birthPlace": "PAU",
+        "address": "32 AVENUE DU MIDOUR",
+        "postalCode": "32110",
+        "city": "NOGARO",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "12AI6077",
+        "expiryDate": "28 02 2022",
+        "issueDate": "27 02 2022",
+        "issuingState": "Préfecture du Gers AUCH",
+        "mrz1": "P<FRAALLART<PHILIPPE<LIBOIRE<<<<<<<<<<<<<<",
+        "mrz2": "12AI601772FRA6703141M2202277<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:29:31.237Z",
+      "processingIndex": 6
+    },
+    {
+      "originalFilename": "AEC372166FE44161A5A600EAA1DE8B7B.jpg",
+      "newFilename": "francois-becret.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\francois-becret.jpg",
+      "analysis": {
+        "surname": "BECRET",
+        "givenNames": [
+          "Francois",
+          "Fernand",
+          "Louis"
+        ],
+        "firstGivenName": "Francois",
+        "birthDate": "27 02 1947",
+        "birthPlace": "REIMS",
+        "country": "FRANCE",
+        "documentNumber": "12DD042164",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "28 06 2022",
+        "issueDate": "27 09 2022",
+        "issuingState": "Préfet de la Seine-Maritime ROUEN",
+        "rue": "10 rue GRIEU",
+        "codePostal": "76000",
+        "ville": "ROUEN",
+        "mrz1": "P<FRABECRET<<FRANCOIS<FERNAND<LOUIS<<<<<<<<<<<<<",
+        "mrz2": "12DD042164FRA4402277M2209276<<<<<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Francois",
+        "lastName": "BECRET",
+        "birthDate": "27 02 1947",
+        "birthPlace": "REIMS",
+        "address": "10 rue GRIEU",
+        "postalCode": "76000",
+        "city": "ROUEN",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "12DD042164",
+        "expiryDate": "28 06 2022",
+        "issueDate": "27 09 2022",
+        "issuingState": "Préfet de la Seine-Maritime ROUEN",
+        "mrz1": "P<FRABECRET<<FRANCOIS<FERNAND<LOUIS<<<<<<<<<<<<<",
+        "mrz2": "12DD042164FRA4402277M2209276<<<<<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:29:36.236Z",
+      "processingIndex": 7
+    },
+    {
+      "originalFilename": "FSkef7CWYAA-qN1.jpg",
+      "newFilename": "nathalie-attia.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\nathalie-attia.jpg",
+      "analysis": {
+        "surname": "ATTIA",
+        "givenNames": [
+          "Nathalie",
+          "Lucie"
+        ],
+        "firstGivenName": "Nathalie",
+        "birthDate": "09 02 1969",
+        "birthPlace": "PARIS 15E ARRONDISSEMENT",
+        "country": "FRANCE",
+        "documentNumber": "19DF238591",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "04 06 2029",
+        "issueDate": "05 06 2019",
+        "issuingState": "Préfecture des Hauts de Seine NANTERRE",
+        "rue": "30 RUE ADOLPHE CHERIOUX",
+        "codePostal": "",
+        "ville": "92130 ISSY-LES-MOULINEAUX",
+        "mrz1": "P<FRAATTIA<NATHALIE<LUCIE<CHRISTIANE",
+        "mrz2": "19DF238591FRA6902092F2906047<<<<<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Nathalie",
+        "lastName": "ATTIA",
+        "birthDate": "09 02 1969",
+        "birthPlace": "PARIS 15E ARRONDISSEMENT",
+        "address": "30 RUE ADOLPHE CHERIOUX",
+        "postalCode": "",
+        "city": "92130 ISSY-LES-MOULINEAUX",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "19DF238591",
+        "expiryDate": "04 06 2029",
+        "issueDate": "05 06 2019",
+        "issuingState": "Préfecture des Hauts de Seine NANTERRE",
+        "mrz1": "P<FRAATTIA<NATHALIE<LUCIE<CHRISTIANE",
+        "mrz2": "19DF238591FRA6902092F2906047<<<<<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:29:42.251Z",
+      "processingIndex": 8
+    },
+    {
+      "originalFilename": "images.jpg",
+      "newFilename": "michel-maurice-tall.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\michel-maurice-tall.jpg",
+      "analysis": {
+        "surname": "TALL",
+        "givenNames": [
+          "Michel Maurice"
+        ],
+        "firstGivenName": "Michel Maurice",
+        "birthDate": "15 06 49",
+        "birthPlace": "PARIS",
+        "country": "FRANCE",
+        "documentNumber": "10CT79008",
+        "nationality": "FRA",
+        "sex": "M",
+        "expiryDate": "30 06 16",
+        "issueDate": "30 06 06",
+        "issuingState": "FRA",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRATALL<<MICHEL<MAURICE<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "16CT7900815FRA4906132M2609290<<<<<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Michel Maurice",
+        "lastName": "TALL",
+        "birthDate": "15 06 49",
+        "birthPlace": "PARIS",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "FRANCE",
+        "nationality": "FRA",
+        "sex": "M",
+        "documentNumber": "10CT79008",
+        "expiryDate": "30 06 16",
+        "issueDate": "30 06 06",
+        "issuingState": "FRA",
+        "mrz1": "P<FRATALL<<MICHEL<MAURICE<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "16CT7900815FRA4906132M2609290<<<<<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:29:46.052Z",
+      "processingIndex": 9
+    },
+    {
+      "originalFilename": "images2.jpg",
+      "newFilename": "maryline-paperi.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\maryline-paperi.jpg",
+      "analysis": {
+        "surname": "PAPERI",
+        "givenNames": [
+          "MARYLINE"
+        ],
+        "firstGivenName": "MARYLINE",
+        "birthDate": "10.08.1990",
+        "birthPlace": "RABAT",
+        "country": "MAROC",
+        "documentNumber": "XK0939402",
+        "nationality": "MAROCAINE",
+        "sex": "F",
+        "expiryDate": "10.08.2020",
+        "issueDate": "10.08.2010",
+        "issuingState": "MAROC",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<GRAPERIN<<MARYLINE<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "10AR6939402FRA8012108MAR2019<<<<<<<<<<<<<<",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "MARYLINE",
+        "lastName": "PAPERI",
+        "birthDate": "10.08.1990",
+        "birthPlace": "RABAT",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "MAROC",
+        "nationality": "MAROCAINE",
+        "sex": "F",
+        "documentNumber": "XK0939402",
+        "expiryDate": "10.08.2020",
+        "issueDate": "10.08.2010",
+        "issuingState": "MAROC",
+        "mrz1": "P<GRAPERIN<<MARYLINE<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "10AR6939402FRA8012108MAR2019<<<<<<<<<<<<<<"
+      },
+      "processedAt": "2025-05-31T22:29:58.861Z",
+      "processingIndex": 11
+    },
+    {
+      "originalFilename": "IMG20200921WA0021.jpg",
+      "newFilename": "isabelle-paterski.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\isabelle-paterski.jpg",
+      "analysis": {
+        "surname": "PATERSKI",
+        "givenNames": [
+          "Isabelle",
+          "Michèle"
+        ],
+        "firstGivenName": "Isabelle",
+        "birthDate": "29 01 1965",
+        "birthPlace": "LENS",
+        "country": "FRA",
+        "documentNumber": "20CA59569",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "26 02 2030",
+        "issueDate": "27 02 2020",
+        "issuingState": "FRA",
+        "rue": "VIA ANTONIO MARTI 11",
+        "codePostal": "20124",
+        "ville": "MILAN",
+        "mrz1": "P<FRA PATERSKI<<ISABELLE<MICHELE<<<<<<<<<<<<<<",
+        "mrz2": "20CA595692FRA6501299F3002267<<<<<<<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Isabelle",
+        "lastName": "PATERSKI",
+        "birthDate": "29 01 1965",
+        "birthPlace": "LENS",
+        "address": "VIA ANTONIO MARTI 11",
+        "postalCode": "20124",
+        "city": "MILAN",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "20CA59569",
+        "expiryDate": "26 02 2030",
+        "issueDate": "27 02 2020",
+        "issuingState": "FRA",
+        "mrz1": "P<FRA PATERSKI<<ISABELLE<MICHELE<<<<<<<<<<<<<<",
+        "mrz2": "20CA595692FRA6501299F3002267<<<<<<<<<<<<<<08"
+      },
+      "processedAt": "2025-05-31T22:30:22.905Z",
+      "processingIndex": 14
+    },
+    {
+      "originalFilename": "IMG_0187.jpg",
+      "newFilename": "christine-garcia.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\christine-garcia.jpg",
+      "analysis": {
+        "surname": "GARCIA",
+        "givenNames": [
+          "Christine",
+          "Cecilia",
+          "Clotilde"
+        ],
+        "firstGivenName": "Christine",
+        "birthDate": "11 06 1978",
+        "birthPlace": "1 MULHOUSE DE STRASBOURG",
+        "country": "FRANCE",
+        "documentNumber": "14AR49089",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "16 03 2024",
+        "issueDate": "17 01 2014",
+        "issuingState": "PREFECTURE DU VAL-DE-MARNE CRETEIL",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRAFRAGARCIA<<CHRISTINE<CECILIA<CLOTILDE<<<<<<<<<<",
+        "mrz2": "14AR490892FRA7606113F2403166<<<<<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Christine",
+        "lastName": "GARCIA",
+        "birthDate": "11 06 1978",
+        "birthPlace": "1 MULHOUSE DE STRASBOURG",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "14AR49089",
+        "expiryDate": "16 03 2024",
+        "issueDate": "17 01 2014",
+        "issuingState": "PREFECTURE DU VAL-DE-MARNE CRETEIL",
+        "mrz1": "P<FRAFRAGARCIA<<CHRISTINE<CECILIA<CLOTILDE<<<<<<<<<<",
+        "mrz2": "14AR490892FRA7606113F2403166<<<<<<<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:30:28.579Z",
+      "processingIndex": 15
+    },
+    {
+      "originalFilename": "Mr Vron_1632780569_.jpg",
+      "newFilename": "eric-veron.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\eric-veron.jpg",
+      "analysis": {
+        "surname": "VERON",
+        "givenNames": [
+          "Eric",
+          "Claude",
+          "André",
+          "Georges"
+        ],
+        "firstGivenName": "Eric",
+        "birthDate": "20 02 1961",
+        "birthPlace": "DIEPPE",
+        "country": "FRANCE",
+        "documentNumber": "17CF59776",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "25 04 2027",
+        "issueDate": "26 04 2017",
+        "issuingState": "Préfecture de la Gironde BORDEAUX",
+        "rue": "13 ALLEE DU QUERCY",
+        "codePostal": "33460",
+        "ville": "ARSAC",
+        "mrz1": "P<FRAVERON<<ERIC<CLAUDE<ANDRE<GEORGES<<<<<<<<<<<<<",
+        "mrz2": "17CF597765FRA6102205M2704254<<<<<<<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Eric",
+        "lastName": "VERON",
+        "birthDate": "20 02 1961",
+        "birthPlace": "DIEPPE",
+        "address": "13 ALLEE DU QUERCY",
+        "postalCode": "33460",
+        "city": "ARSAC",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "17CF59776",
+        "expiryDate": "25 04 2027",
+        "issueDate": "26 04 2017",
+        "issuingState": "Préfecture de la Gironde BORDEAUX",
+        "mrz1": "P<FRAVERON<<ERIC<CLAUDE<ANDRE<GEORGES<<<<<<<<<<<<<",
+        "mrz2": "17CF597765FRA6102205M2704254<<<<<<<<<<<<<<08"
+      },
+      "processedAt": "2025-05-31T22:30:34.080Z",
+      "processingIndex": 16
+    },
+    {
+      "originalFilename": "Passeport MarieEmmanuelle Roussille ep. Monteiro da rocha 17CI44266.jpg",
+      "newFilename": "marie-roussille-ep-monteiro-da-rocha.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\marie-roussille-ep-monteiro-da-rocha.jpg",
+      "analysis": {
+        "surname": "ROUSSILLE ép. MONTEIRO DA ROCHA",
+        "givenNames": [
+          "Marie",
+          "Emmanuelle",
+          "Gabrielle",
+          "Nelly",
+          "Chantal"
+        ],
+        "firstGivenName": "Marie",
+        "birthDate": "19 10 1969",
+        "birthPlace": "TOULON",
+        "country": "",
+        "documentNumber": "17C144266",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "22 05 2027",
+        "issueDate": "23 05 2017",
+        "issuingState": "FRA",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRAROUSSILLE<<MARIE<EMMANUELLE<GABRIEL<<",
+        "mrz2": "17C1442660FRA6910310F2705228<<<<<<<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Marie",
+        "lastName": "ROUSSILLE ép. MONTEIRO DA ROCHA",
+        "birthDate": "19 10 1969",
+        "birthPlace": "TOULON",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "17C144266",
+        "expiryDate": "22 05 2027",
+        "issueDate": "23 05 2017",
+        "issuingState": "FRA",
+        "mrz1": "P<FRAROUSSILLE<<MARIE<EMMANUELLE<GABRIEL<<",
+        "mrz2": "17C1442660FRA6910310F2705228<<<<<<<<<<<<<<08"
+      },
+      "processedAt": "2025-05-31T22:30:39.357Z",
+      "processingIndex": 17
+    },
+    {
+      "originalFilename": "passport_arpan_shah.jpeg-scaled.jpg",
+      "newFilename": "arpan-shah.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\arpan-shah.jpg",
+      "analysis": {
+        "surname": "SHAH",
+        "givenNames": [
+          "Arpan"
+        ],
+        "firstGivenName": "Arpan",
+        "birthDate": "18 03 1980",
+        "birthPlace": "Vadodara, Etat du Gujarat",
+        "country": "Française",
+        "documentNumber": "17AZ41809",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "11 12 2027",
+        "issueDate": "12 12 2017",
+        "issuingState": "Préfecture des Alpes-Maritimes NICE",
+        "rue": "1 AVENUE BEAUGE NICE",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRASHAH<ARPAN<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "17AZ418091FRA8003188M2712114<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Arpan",
+        "lastName": "SHAH",
+        "birthDate": "18 03 1980",
+        "birthPlace": "Vadodara, Etat du Gujarat",
+        "address": "1 AVENUE BEAUGE NICE",
+        "postalCode": "",
+        "city": "",
+        "country": "Française",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "17AZ41809",
+        "expiryDate": "11 12 2027",
+        "issueDate": "12 12 2017",
+        "issuingState": "Préfecture des Alpes-Maritimes NICE",
+        "mrz1": "P<FRASHAH<ARPAN<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "17AZ418091FRA8003188M2712114<<<<<<<<02"
+      },
+      "processedAt": "2025-05-31T22:30:45.352Z",
+      "processingIndex": 18
+    },
+    {
+      "originalFilename": "sans titre _1745599018_1.jpg",
+      "newFilename": "nicolas-petit.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\nicolas-petit.jpg",
+      "analysis": {
+        "surname": "PETIT",
+        "givenNames": [
+          "NICOLAS"
+        ],
+        "firstGivenName": "NICOLAS",
+        "birthDate": "10 08 1983",
+        "birthPlace": "MARSEILLE",
+        "country": "FRANCE",
+        "documentNumber": "13AV967544",
+        "nationality": "FRANCAISE",
+        "sex": "M",
+        "expiryDate": "17 08 2023",
+        "issueDate": "17 08 2013",
+        "issuingState": "REPUBLIQUE FRANCAISE",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "PCFRAPETIT<<NICOLAS<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "13AV967544FRA7703078F2304171<<<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "NICOLAS",
+        "lastName": "PETIT",
+        "birthDate": "10 08 1983",
+        "birthPlace": "MARSEILLE",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "FRANCE",
+        "nationality": "FRANCAISE",
+        "sex": "M",
+        "documentNumber": "13AV967544",
+        "expiryDate": "17 08 2023",
+        "issueDate": "17 08 2013",
+        "issuingState": "REPUBLIQUE FRANCAISE",
+        "mrz1": "PCFRAPETIT<<NICOLAS<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "13AV967544FRA7703078F2304171<<<<<<<<<<08"
+      },
+      "processedAt": "2025-05-31T22:30:49.954Z",
+      "processingIndex": 19
+    }
+  ]
+}
