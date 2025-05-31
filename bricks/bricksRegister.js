@@ -2,7 +2,6 @@ import path from 'path';
 import fs, { stat } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 
 import { pressKey } from '../utils/puppeteer/pressKey.js';
