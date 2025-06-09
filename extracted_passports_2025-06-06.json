@@ -1,0 +1,569 @@
+{
+  "summary": {
+    "processed": 10,
+    "errors": 0,
+    "startIndex": 0,
+    "totalTime": "86.48",
+    "processedAt": "2025-06-06T14:38:46.238Z"
+  },
+  "results": [
+    {
+      "originalFilename": "alx.jpg",
+      "newFilename": "alexandre-issartel.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\alexandre-issartel.jpg",
+      "analysis": {
+        "surname": "ISSARTEL",
+        "givenNames": [
+          "Alexandre"
+        ],
+        "firstGivenName": "Alexandre",
+        "birthDate": "18 11 1992",
+        "birthPlace": "FIRMINY",
+        "country": "FRANCE",
+        "documentNumber": "15CP86829",
+        "nationality": "FRANCAIS",
+        "sex": "M",
+        "expiryDate": "08 09 2025",
+        "issueDate": "09 09 2015",
+        "issuingState": "REPUBLIQUE FRANCAISE",
+        "rue": "40 RUE JULES JANIN",
+        "codePostal": "42000",
+        "ville": "SAINT-ETIENNE",
+        "mrz1": "P<FR<ISSARTEL<<ALEXANDRE<<<<<<<<<<<<<<",
+        "mrz2": "15CP868290FRA9211188M2509080<<<<<<<<<<<<<",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Alexandre",
+        "lastName": "ISSARTEL",
+        "birthDate": "18 11 1992",
+        "birthPlace": "FIRMINY",
+        "address": "40 RUE JULES JANIN",
+        "postalCode": "42000",
+        "city": "SAINT-ETIENNE",
+        "country": "FRANCE",
+        "nationality": "FRANCAIS",
+        "sex": "M",
+        "documentNumber": "15CP86829",
+        "expiryDate": "08 09 2025",
+        "issueDate": "09 09 2015",
+        "issuingState": "REPUBLIQUE FRANCAISE",
+        "mrz1": "P<FR<ISSARTEL<<ALEXANDRE<<<<<<<<<<<<<<",
+        "mrz2": "15CP868290FRA9211188M2509080<<<<<<<<<<<<<"
+      },
+      "processedAt": "2025-06-06T14:37:29.157Z",
+      "processingIndex": 1
+    },
+    {
+      "originalFilename": "Arpan.jpg",
+      "newFilename": "arpan-shah.jpg",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\arpan-shah.jpg",
+      "analysis": {
+        "surname": "SHAH",
+        "givenNames": [
+          "Arpan"
+        ],
+        "firstGivenName": "Arpan",
+        "birthDate": "18 03 1980",
+        "birthPlace": "Vadodara, Etat du Gujarat",
+        "country": "FRA",
+        "documentNumber": "17AZ41809",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "11 12 2027",
+        "issueDate": "12 12 2017",
+        "issuingState": "Préfecture des Alpes-Maritimes NICE",
+        "rue": "1 AVENUE BEAUGE NICE",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRASHAH<<ARPAN<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "17AZ418091FRA8003188M2712114<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Arpan",
+        "lastName": "SHAH",
+        "birthDate": "18 03 1980",
+        "birthPlace": "Vadodara, Etat du Gujarat",
+        "address": "1 AVENUE BEAUGE NICE",
+        "postalCode": "",
+        "city": "",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "17AZ41809",
+        "expiryDate": "11 12 2027",
+        "issueDate": "12 12 2017",
+        "issuingState": "Préfecture des Alpes-Maritimes NICE",
+        "mrz1": "P<FRASHAH<<ARPAN<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "17AZ418091FRA8003188M2712114<<<<<<<<02"
+      },
+      "processedAt": "2025-06-06T14:37:37.120Z",
+      "processingIndex": 2
+    },
+    {
+      "originalFilename": "celine.webp",
+      "newFilename": "celine-lalleu.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\celine-lalleu.webp",
+      "analysis": {
+        "surname": "LALLEU",
+        "givenNames": [
+          "Celine"
+        ],
+        "firstGivenName": "Celine",
+        "birthDate": "17/12/1981",
+        "birthPlace": "NANCY",
+        "country": "FRA",
+        "documentNumber": "11CX29843",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "19/10/2021",
+        "issueDate": "20/10/2011",
+        "issuingState": "AMBASSADE DE FRANCE A SINGAPOUR",
+        "rue": "BLK 129 BEDOK NORTH STREET 2 UNIT 12-8",
+        "codePostal": "469129",
+        "ville": "SINGAPOUR",
+        "mrz1": "P<FRAALLIEU<<CELINE<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "11CX298439FRA8112174F2110190<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Celine",
+        "lastName": "LALLEU",
+        "birthDate": "17/12/1981",
+        "birthPlace": "NANCY",
+        "address": "BLK 129 BEDOK NORTH STREET 2 UNIT 12-8",
+        "postalCode": "469129",
+        "city": "SINGAPOUR",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "11CX29843",
+        "expiryDate": "19/10/2021",
+        "issueDate": "20/10/2011",
+        "issuingState": "AMBASSADE DE FRANCE A SINGAPOUR",
+        "mrz1": "P<FRAALLIEU<<CELINE<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "11CX298439FRA8112174F2110190<<<<<<<<08"
+      },
+      "processedAt": "2025-06-06T14:37:48.748Z",
+      "processingIndex": 3
+    },
+    {
+      "originalFilename": "cqgqg.webp",
+      "newFilename": "remi-boubon.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\remi-boubon.webp",
+      "analysis": {
+        "surname": "BOUBON",
+        "givenNames": [
+          "REMI",
+          "ANDRE"
+        ],
+        "firstGivenName": "REMI",
+        "birthDate": "26 02 1998",
+        "birthPlace": "AVIGNON",
+        "country": "FRA",
+        "documentNumber": "15AC17988",
+        "nationality": "FRA",
+        "sex": "M",
+        "expiryDate": "21 04 2015",
+        "issueDate": "",
+        "issuingState": "Préfecture du Gard Nîmes",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRABOUBON<<REMI<ANDRE<<<<<<<<<<<<<<",
+        "mrz2": "15AC179881FRA9402261M2504203<<<<<<<<<<00",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "REMI",
+        "lastName": "BOUBON",
+        "birthDate": "26 02 1998",
+        "birthPlace": "AVIGNON",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "FRA",
+        "nationality": "FRA",
+        "sex": "M",
+        "documentNumber": "15AC17988",
+        "expiryDate": "21 04 2015",
+        "issueDate": "",
+        "issuingState": "Préfecture du Gard Nîmes",
+        "mrz1": "P<FRABOUBON<<REMI<ANDRE<<<<<<<<<<<<<<",
+        "mrz2": "15AC179881FRA9402261M2504203<<<<<<<<<<00"
+      },
+      "processedAt": "2025-06-06T14:37:55.976Z",
+      "processingIndex": 4
+    },
+    {
+      "originalFilename": "dede.webp",
+      "newFilename": "stanley-leo.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\stanley-leo.webp",
+      "analysis": {
+        "surname": "LEO",
+        "givenNames": [
+          "Stanley"
+        ],
+        "firstGivenName": "Stanley",
+        "birthDate": "16 07 2002",
+        "birthPlace": "CAYENNE",
+        "country": "FRANCE",
+        "documentNumber": "15CV28143",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "14 07 2023",
+        "issueDate": "13 07 2019",
+        "issuingState": "Prefecture du Val d'Oise CERGY PONTOISE",
+        "rue": "2 RUE JEAN MONNET",
+        "codePostal": "95500",
+        "ville": "GONESSE",
+        "mrz1": "P<FRALEO<<STANLEY<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "15CV281436FRA9001064M2112149<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Stanley",
+        "lastName": "LEO",
+        "birthDate": "16 07 2002",
+        "birthPlace": "CAYENNE",
+        "address": "2 RUE JEAN MONNET",
+        "postalCode": "95500",
+        "city": "GONESSE",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "15CV28143",
+        "expiryDate": "14 07 2023",
+        "issueDate": "13 07 2019",
+        "issuingState": "Prefecture du Val d'Oise CERGY PONTOISE",
+        "mrz1": "P<FRALEO<<STANLEY<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "15CV281436FRA9001064M2112149<<<<<<<<08"
+      },
+      "processedAt": "2025-06-06T14:38:03.280Z",
+      "processingIndex": 5
+    },
+    {
+      "originalFilename": "dqdq.webp",
+      "newFilename": "saida-hammouch-ep-el-houfia.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\saida-hammouch-ep-el-houfia.webp",
+      "analysis": {
+        "surname": "HAMMOUCH ép. EL HOUFIA",
+        "givenNames": [
+          "Saida"
+        ],
+        "firstGivenName": "Saida",
+        "birthDate": "28 04 1971",
+        "birthPlace": "EL KALA MIZAB, M'TIOUA",
+        "country": "FRA",
+        "documentNumber": "13CA15710",
+        "nationality": "Française",
+        "sex": "F",
+        "expiryDate": "03 07 2023",
+        "issueDate": "04 07 2013",
+        "issuingState": "Préfecture des Hauts-de-Seine NANTERRE",
+        "rue": "4 RUE DES VIEILLES VIGNES",
+        "codePostal": "92400",
+        "ville": "COURBEVOIE",
+        "mrz1": "P<FRAHAMMOUCH<SAIDA<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "13CA15710FRA7704282F2307035<<<<<<<<<<<<<<02",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Saida",
+        "lastName": "HAMMOUCH ép. EL HOUFIA",
+        "birthDate": "28 04 1971",
+        "birthPlace": "EL KALA MIZAB, M'TIOUA",
+        "address": "4 RUE DES VIEILLES VIGNES",
+        "postalCode": "92400",
+        "city": "COURBEVOIE",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "F",
+        "documentNumber": "13CA15710",
+        "expiryDate": "03 07 2023",
+        "issueDate": "04 07 2013",
+        "issuingState": "Préfecture des Hauts-de-Seine NANTERRE",
+        "mrz1": "P<FRAHAMMOUCH<SAIDA<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "13CA15710FRA7704282F2307035<<<<<<<<<<<<<<02"
+      },
+      "processedAt": "2025-06-06T14:38:12.069Z",
+      "processingIndex": 6
+    },
+    {
+      "originalFilename": "guy.webp",
+      "newFilename": "guy-heredia.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\guy-heredia.webp",
+      "analysis": {
+        "surname": "HEREDIA",
+        "givenNames": [
+          "Guy",
+          "Francis",
+          "Patrice",
+          "Maxime"
+        ],
+        "firstGivenName": "Guy",
+        "birthDate": "07 07 1984",
+        "birthPlace": "VILLEURBANNE",
+        "country": "FRANCE",
+        "documentNumber": "09PD210712",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "30 06 2019",
+        "issueDate": "29 06 2009",
+        "issuingState": "Préfecture du Rhône LYON",
+        "rue": "24 ALLEE DES LILAS",
+        "codePostal": "69190",
+        "ville": "SAINTE FOY LES LYON",
+        "mrz1": "PCFRAHEREDIA<<GUY<FRANCIS<PATRICE<MAXIME<<<<<<<<<<",
+        "mrz2": "09PD210712FRA8607070M1906291<<<<<<<<<<<<<<<<<",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Guy",
+        "lastName": "HEREDIA",
+        "birthDate": "07 07 1984",
+        "birthPlace": "VILLEURBANNE",
+        "address": "24 ALLEE DES LILAS",
+        "postalCode": "69190",
+        "city": "SAINTE FOY LES LYON",
+        "country": "FRANCE",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "09PD210712",
+        "expiryDate": "30 06 2019",
+        "issueDate": "29 06 2009",
+        "issuingState": "Préfecture du Rhône LYON",
+        "mrz1": "PCFRAHEREDIA<<GUY<FRANCIS<PATRICE<MAXIME<<<<<<<<<<",
+        "mrz2": "09PD210712FRA8607070M1906291<<<<<<<<<<<<<<<<<"
+      },
+      "processedAt": "2025-06-06T14:38:21.806Z",
+      "processingIndex": 7
+    },
+    {
+      "originalFilename": "jimmy.webp",
+      "newFilename": "jimmy-reynaud.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\jimmy-reynaud.webp",
+      "analysis": {
+        "surname": "REYNAUD",
+        "givenNames": [
+          "Jimmy",
+          "Julien"
+        ],
+        "firstGivenName": "Jimmy",
+        "birthDate": "18 08 1991",
+        "birthPlace": "SURESNES",
+        "country": "Française",
+        "documentNumber": "13AZ566934",
+        "nationality": "FRA",
+        "sex": "M",
+        "expiryDate": "05 05 2023",
+        "issueDate": "06 05 2013",
+        "issuingState": "FRA",
+        "rue": "24 AVENUE DUROSNAY",
+        "codePostal": "92400",
+        "ville": "COURBEVOIE",
+        "mrz1": "P<FRAREYNAUD<<JIMMY<JULIEN<<<<<<<<<<<<<<",
+        "mrz2": "13AZ566934FRA9108183M2305053<<<<<<<<<<06",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Jimmy",
+        "lastName": "REYNAUD",
+        "birthDate": "18 08 1991",
+        "birthPlace": "SURESNES",
+        "address": "24 AVENUE DUROSNAY",
+        "postalCode": "92400",
+        "city": "COURBEVOIE",
+        "country": "Française",
+        "nationality": "FRA",
+        "sex": "M",
+        "documentNumber": "13AZ566934",
+        "expiryDate": "05 05 2023",
+        "issueDate": "06 05 2013",
+        "issuingState": "FRA",
+        "mrz1": "P<FRAREYNAUD<<JIMMY<JULIEN<<<<<<<<<<<<<<",
+        "mrz2": "13AZ566934FRA9108183M2305053<<<<<<<<<<06"
+      },
+      "processedAt": "2025-06-06T14:38:30.600Z",
+      "processingIndex": 8
+    },
+    {
+      "originalFilename": "kissima.webp",
+      "newFilename": "kissima-toure.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\kissima-toure.webp",
+      "analysis": {
+        "surname": "TOURE",
+        "givenNames": [
+          "KISSIMA"
+        ],
+        "firstGivenName": "KISSIMA",
+        "birthDate": "24 07 1979",
+        "birthPlace": "PARIS 10E ARRONDISSEMENT",
+        "country": "FRANCE",
+        "documentNumber": "14AK931796",
+        "nationality": "FRANCAISE",
+        "sex": "M",
+        "expiryDate": "13 02 2024",
+        "issueDate": "14 02 2014",
+        "issuingState": "FRA",
+        "rue": "",
+        "codePostal": "",
+        "ville": "",
+        "mrz1": "P<FRA<TOURE<KISSIMA<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "14AK931796FRA7807242M2402136<<<<<<<<<<08",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "KISSIMA",
+        "lastName": "TOURE",
+        "birthDate": "24 07 1979",
+        "birthPlace": "PARIS 10E ARRONDISSEMENT",
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "country": "FRANCE",
+        "nationality": "FRANCAISE",
+        "sex": "M",
+        "documentNumber": "14AK931796",
+        "expiryDate": "13 02 2024",
+        "issueDate": "14 02 2014",
+        "issuingState": "FRA",
+        "mrz1": "P<FRA<TOURE<KISSIMA<<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "14AK931796FRA7807242M2402136<<<<<<<<<<08"
+      },
+      "processedAt": "2025-06-06T14:38:36.819Z",
+      "processingIndex": 9
+    },
+    {
+      "originalFilename": "remi.webp",
+      "newFilename": "patrick-bonhomme.webp",
+      "filePath": "C:\\Users\\bendo\\Desktop\\Documents\\Tech\\Puppeteer Master\\assets\\passports\\patrick-bonhomme.webp",
+      "analysis": {
+        "surname": "BONHOMME",
+        "givenNames": [
+          "Patrick",
+          "Robert",
+          "Marcel",
+          "Leon"
+        ],
+        "firstGivenName": "Patrick",
+        "birthDate": "30 08 1961",
+        "birthPlace": "Clichy",
+        "country": "FRA",
+        "documentNumber": "11CK15284",
+        "nationality": "Française",
+        "sex": "M",
+        "expiryDate": "09 08 2021",
+        "issueDate": "10 08 2011",
+        "issuingState": "Sous-Préfecture de LE HAVRE",
+        "rue": "33, RUE GUSTAVE NICOLLE",
+        "codePostal": "76400",
+        "ville": "FECAMP",
+        "mrz1": "P<FRABONHOMME<<PATRICK<ROBERT<MARCEL<LEON",
+        "mrz2": "11CK152842FRA4904302M2108092<<<<<<<<<<<<<<04",
+        "confidence": {
+          "surname": 0.9,
+          "givenNames": [
+            0.9
+          ],
+          "birthDate": 0.9,
+          "birthPlace": 0.9,
+          "country": 0.9
+        }
+      },
+      "normalizedData": {
+        "firstName": "Patrick",
+        "lastName": "BONHOMME",
+        "birthDate": "30 08 1961",
+        "birthPlace": "Clichy",
+        "address": "33, RUE GUSTAVE NICOLLE",
+        "postalCode": "76400",
+        "city": "FECAMP",
+        "country": "FRA",
+        "nationality": "Française",
+        "sex": "M",
+        "documentNumber": "11CK15284",
+        "expiryDate": "09 08 2021",
+        "issueDate": "10 08 2011",
+        "issuingState": "Sous-Préfecture de LE HAVRE",
+        "mrz1": "P<FRABONHOMME<<PATRICK<ROBERT<MARCEL<LEON",
+        "mrz2": "11CK152842FRA4904302M2108092<<<<<<<<<<<<<<04"
+      },
+      "processedAt": "2025-06-06T14:38:46.238Z",
+      "processingIndex": 10
+    }
+  ]
+}

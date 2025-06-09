@@ -1,0 +1,61 @@
+[
+  {
+    "sessionId": "heyy",
+    "name": "heyy",
+    "description": "",
+    "conversationHistory": [
+      {
+        "role": "user",
+        "content": "heyy !"
+      },
+      {
+        "role": "assistant",
+        "content": "Hey! 👋 Ravi de collaborer avec toi sur l'architecture de tes tunnels de vente automatisés.\n\n🔍 PREMIÈRE ANALYSE:\n- Je vois que tu gères actuellement 10k+ prospects/mois\n- Tu utilises une stack moderne avec Puppeteer/Supabase\n- Tu cherches à passer d'une approche technique à stratégique\n\n❓ QUESTIONS CLÉS:\n1. Quel est ton tunnel de vente le plus performant actuellement ?\n2. Quelles sont les tâches répétitives qui te prennent le plus de temps ?\n3. As-tu déjà expérimenté avec des agents autonomes ?\n\n🎯 OBJECTIFS INITIAUX:\n- Cartographier tes processus actuels\n- Identifier les opportunités d'automatisation\n- Concevoir une architecture multi-agents adaptée\n\nJe peux t'aider à:\n- Structurer une architecture évolutive\n- Mettre en place des agents spécialisés\n- Automatiser l'orchestration\n\nPar où veux-tu qu'on commence ? 🚀"
+      }
+    ],
+    "timestamp": "2025-06-01T12:07:52.101Z",
+    "messageCount": 2
+  },
+  {
+    "sessionId": "2",
+    "name": "2",
+    "description": "",
+    "conversationHistory": [
+      {
+        "role": "user",
+        "content": "j'ai dis quoi dans mon message precedent >"
+      },
+      {
+        "role": "assistant",
+        "content": "Je ne vois pas de message précédent dans notre conversation. C'est notre premier échange ! 🤝\n\nJe suis prêt à t'aider sur:\n- L'architecture de tes tunnels de vente 🏗️\n- L'orchestration multi-agents 🤖\n- La scalabilité de ton business 📈\n- La transition développeur → chef d'orchestre 👨‍💼\n\nPar où souhaites-tu commencer ? Je te propose qu'on:\n1. Fasse un état des lieux de ton architecture actuelle\n2. Identifie tes points de friction majeurs\n3. Définisse une roadmap d'évolution\n\nQu'est-ce qui te préoccupe le plus actuellement ?"
+      }
+    ],
+    "timestamp": "2025-06-01T12:09:22.289Z",
+    "messageCount": 2
+  },
+  {
+    "sessionId": "coco",
+    "name": "coco",
+    "description": "oui",
+    "conversationHistory": [
+      {
+        "role": "user",
+        "content": "j'ai dis quoi dans mon message precedent >"
+      },
+      {
+        "role": "assistant",
+        "content": "Je ne vois pas de message précédent dans notre conversation. C'est notre premier échange ! 🤝\n\nJe suis prêt à t'aider sur:\n- L'architecture de tes tunnels de vente 🏗️\n- L'orchestration multi-agents 🤖\n- La scalabilité de ton business 📈\n- La transition développeur → chef d'orchestre 👨‍💼\n\nPar où souhaites-tu commencer ? Je te propose qu'on:\n1. Fasse un état des lieux de ton architecture actuelle\n2. Identifie tes points de friction majeurs\n3. Définisse une roadmap d'évolution\n\nQu'est-ce qui te préoccupe le plus actuellement ?"
+      },
+      {
+        "role": "user",
+        "content": "cococo"
+      },
+      {
+        "role": "assistant",
+        "content": "👋 Je comprends que tu veux démarrer la conversation de manière décontractée avec \"cococo\" !\n\nPour avancer de manière productive, j'aurais besoin de comprendre plus précisément:\n\n🎯 TES PRIORITÉS\n- Quel aspect de ton business te prend le plus de temps ?\n- Quelle partie voudrais-tu automatiser en premier ?\n- Combien de tunnels de vente gères-tu actuellement ?\n\n🤖 TES BESOINS TECHNIQUES\n- Quels sont tes points de friction avec l'architecture actuelle ?\n- Quels types d'agents voudrais-tu mettre en place ?\n- As-tu déjà expérimenté avec des systèmes multi-agents ?\n\nOn peut commencer par là et ensuite plonger dans les solutions concrètes ! \n\nQu'est-ce qui te parle le plus dans ces points ? 🤔"
+      }
+    ],
+    "timestamp": "2025-06-01T12:09:45.206Z",
+    "messageCount": 4
+  }
+]

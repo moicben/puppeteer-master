@@ -1,9 +1,13 @@
 import puppeteer from 'puppeteer';
-import 'dotenv/config';
+import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+
+dotenv.config();
+
+console.log('Puppeteer path:', process.env.PUPPETEER_EXECUTABLE_PATH)
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,15 +41,15 @@ export async function launchBrowser() {
       '--disable-extensions',
       '--disable-gpu',
       //`--proxy-server=${proxyAddress}:${proxyPort}`,
-      //`--user-data-dir=${process.env.PUPPETEER_PROFIL_PATH || '/root/chrome-profile/Default'}`, // Chemin vers le profil Chrome
+      //`--user-data-dir=${process.env.PUPPETEER_USER_DATA_DIR || '/root/chrome-profile/Default'}`, // Chemin vers le profil Chrome
     ],
-    //executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/google-chrome-stable', // Chemin vers l'exécutable Chrome
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/google-chrome-stable', // Chemin vers l'exécutable Chrome
   });
 
-  // Utiliser l'onglet par défaut créé lors du launch
+  // Utiliser l'onglet pa défaut créé lors du launch
   const pages = await browser.pages();
   const page = pages.length ? pages[0] : await browser.newPage();
-
+   
   // Authentification par proxy (si besoin)
   // await page.authenticate({
   //   username: proxyUsername,

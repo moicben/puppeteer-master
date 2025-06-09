@@ -43,7 +43,7 @@ function validateAccountData(accountData) {
   }  // Vérifier que le fichier d'image existe
   const cleanFirstName = accountData.first_name ? accountData.first_name.toLowerCase().split(' ')[0] : '';
   const cleanLastName = accountData.last_name ? accountData.last_name.toLowerCase().replace(/\s+/g, '-').replace(/[éèêë]/g, 'e').replace(/[àâä]/g, 'a').replace(/[ùûü]/g, 'u').replace(/[ôö]/g, 'o').replace(/[îï]/g, 'i').replace(/ç/g, 'c') : '';
-  const idPath = path.join(__dirname, '..', 'assets', 'passports', `${cleanFirstName}-${cleanLastName}.jpg`);
+  const idPath = path.join(__dirname, '..', 'assets', 'passports', 'proceed', `${cleanFirstName}-${cleanLastName}.jpg`);
   
   if (!fs.existsSync(idPath)) {
     // Chercher un fichier qui commence par le prénom et nom
@@ -86,7 +86,7 @@ async function createBricksAccount(accountData) {
     // Chemin vers l'image d'identité - logique de recherche améliorée
   const cleanFirstName = accountData.first_name.toLowerCase().split(' ')[0];
   const cleanLastName = accountData.last_name.toLowerCase().replace(/\s+/g, '-').replace(/[éèêë]/g, 'e').replace(/[àâä]/g, 'a').replace(/[ùûü]/g, 'u').replace(/[ôö]/g, 'o').replace(/[îï]/g, 'i').replace(/ç/g, 'c');
-  let idPath = path.join(__dirname, '..', 'assets', 'passports', `${cleanFirstName}-${cleanLastName}.jpg`);
+  let idPath = path.join(__dirname, '..', 'assets', 'passports', 'proceed', `${cleanFirstName}-${cleanLastName}.jpg`);
   
   // Si le fichier n'existe pas, chercher un fichier similaire
   if (!fs.existsSync(idPath)) {
@@ -431,8 +431,8 @@ async function processAllPassports() {
 
         // Pause entre les créations de compte pour éviter la détection
         if (i < accounts.length - 1) {
-          console.log('⏳ Pause de 30 secondes avant le prochain compte...');
-          await new Promise(resolve => setTimeout(resolve, 30000));
+          console.log('⏳ Pause de 10 secondes avant le prochain compte...');
+          await new Promise(resolve => setTimeout(resolve, 10000));
         }      } catch (error) {
         console.error(`❌ Erreur fatale pour ${account.first_name} ${account.last_name}:`, error);
         
