@@ -3,6 +3,10 @@
 
 # dependencies
 /node_modules
+/cto-dashboard/node_modules
+
+# puppeteer / chrome
+/chrome-profil
 
 
 # testing
