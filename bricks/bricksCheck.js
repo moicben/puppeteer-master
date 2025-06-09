@@ -38,6 +38,7 @@ async function checkBricksAccount(accountData) {
 
     // Rechercher les champs de connexion
     const emailInput = await page.$('input[type="email"]');
+    await new Promise(resolve => setTimeout(resolve, 1500));
     const passwordInput = await page.$('input[type="password"]');
     
     if (!emailInput || !passwordInput) {
@@ -47,11 +48,11 @@ async function checkBricksAccount(accountData) {
     console.log('Saisie des identifiants de connexion...');
     await page.type('input[type="email"]', accountData.email, { delay: 100 });
     await page.type('input[type="password"]', 'Cadeau2014!', { delay: 100 });    // Cliquer sur le bouton de connexion ou appuyer sur Entrée
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 2000));
     await pressKey(page, 'Enter', 1);
 
     // Attendre d'être redirigé vers le dashboard
-    await new Promise(resolve => setTimeout(resolve, 8000));
+    await new Promise(resolve => setTimeout(resolve, 9000));
 
     // Vérifier l'URL actuelle pour s'assurer qu'on est connecté
     const currentUrl = page.url();
