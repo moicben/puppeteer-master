@@ -1,9 +1,9 @@
-import { newLaunchBrowser } from './utils/puppeteer/newLaunchBrowser.js';
+import { launchBrowser } from './utils/puppeteer/launchBrowser.js';
 
 const URL = 'https://www.christopeit-sport.fr';
 
 async function browserTest() {
-  const { browser, page } = await newLaunchBrowser();
+  const { browser, page } = await launchBrowser();
   
   try {
     await page.goto(URL);
