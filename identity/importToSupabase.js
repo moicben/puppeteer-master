@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import xlsx from 'xlsx';
+import csv from 'csv-parser';
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
@@ -136,89 +136,106 @@ async function generatePhoneNumber() {
 
 
 // Fonction principale d'importation
-async function importToSupabase(xlsxFilePath) {
+async function importToSupabase(csvFilePath) {
   try {
     console.log('🚀 Début de l\'importation vers Supabase...');
     
-    // Lire le fichier XLSX
-    const workbook = xlsx.readFile(xlsxFilePath);
-    const sheetName = workbook.SheetNames[0];
-    const sheetData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
+    // Lire le fichier CSV
+    const sheetData = [];
     
-    console.log(`📋 ${sheetData.length} enregistrements à importer...`);
-    
-    let importedCount = 0;
-    let errorCount = 0;
-    const errors = [];
-    
-    for (let i = 0; i < sheetData.length; i++) {
-      const account = sheetData[i];
-      
-      try {
-        console.log(`\n📷 [${i + 1}/${sheetData.length}] Traitement de: ${account.FirstName} ${account.LastName}...`);
-        
-        // Générer un email unique
-        const email = await generateUniqueEmail(account.FirstName, account.LastName);
+    return new Promise((resolve, reject) => {
+      fs.createReadStream(csvFilePath)
+        .pipe(csv())
+        .on('data', (row) => {
+          sheetData.push(row);
+        })
+        .on('end', async () => {
+          try {
+            console.log(`📋 ${sheetData.length} enregistrements à importer...`);
+            
+            let importedCount = 0;
+            let errorCount = 0;
+            const errors = [];
+            
+            for (let i = 0; i < sheetData.length; i++) {
+              const account = sheetData[i];
+              
+              try {
+                console.log(`\n📷 [${i + 1}/${sheetData.length}] Traitement de: ${account.FirstName} ${account.LastName}...`);
+                
+                // Générer un email unique
+                const email = await generateUniqueEmail(account.FirstName, account.LastName);
 
-        // Générer un numéro de téléphone aléatoire
-        const phone = await generatePhoneNumber();
-        
-        // Préparer les données pour Supabase
-        const accountData = {
-          email: email,
-          phone: phone,
-          first_name: account.FirstName,
-          last_name: account.LastName,
-          birth_date: account.BirthDate || null,
-          birth_place: account.BirthPlace || null,
-          address: account.Address || null,
-          postal_code: account.PostalCode || null,
-          city: account.City || null,
-          country: account.Country || 'France', // Valeur par défaut
-          sex: account.Sex || 'M', // Valeur par défaut
-          document_number: account.DocumentNumber || null,
-          expiry_date: account.ExpiryDate || null,
-          issue_date: account.IssueDate || null,
-          issuing_state: account.IssuingState || null,
-          mrz1: account.MRZ1 || null,
-          mrz2: account.MRZ2 || null,
-          service: 'bricks',
-          status: 'new',
-          comment: `Imported from ${path.basename(xlsxFilePath)} on ${new Date().toISOString()}`
-        };        
-        // Sauvegarder en base Supabase
-        const savedAccount = await createAccount(accountData);
-        console.log(`💾 [${i + 1}] Sauvegardé avec ID: ${savedAccount.id} - ${email}`);
-        importedCount++;
-        
-      } catch (error) {
-        console.error(`❌ [${i + 1}] Erreur pour ${account.FirstName} ${account.LastName}:`, error.message);
-        errors.push({
-          index: i + 1,
-          name: `${account.FirstName} ${account.LastName}`,
-          error: error.message
+                // Générer un numéro de téléphone aléatoire
+                const phone = await generatePhoneNumber();
+                
+                // Préparer les données pour Supabase
+                const accountData = {
+                  email: email,
+                  phone: phone,
+                  first_name: account.FirstName,
+                  last_name: account.LastName,
+                  birth_date: account.BirthDate || null,
+                  birth_place: account.BirthPlace || null,
+                  address: account.Address || null,
+                  postal_code: account.PostalCode || null,
+                  city: account.City || null,
+                  country: account.Country || 'France', // Valeur par défaut
+                  sex: account.Sex || 'M', // Valeur par défaut
+                  document_number: account.DocumentNumber || null,
+                  expiry_date: account.ExpiryDate || null,
+                  issue_date: account.IssueDate || null,
+                  issuing_state: account.IssuingState || null,
+                  mrz1: account.MRZ1 || null,
+                  mrz2: account.MRZ2 || null,
+                  service: 'bricks',
+                  status: 'new',
+                  comment: `Imported from ${path.basename(csvFilePath)} on ${new Date().toISOString()}`
+                };        
+                // Sauvegarder en base Supabase
+                const savedAccount = await createAccount(accountData);
+                console.log(`💾 [${i + 1}] Sauvegardé avec ID: ${savedAccount.id} - ${email}`);
+                importedCount++;
+                
+              } catch (error) {
+                console.error(`❌ [${i + 1}] Erreur pour ${account.FirstName} ${account.LastName}:`, error.message);
+                errors.push({
+                  index: i + 1,
+                  name: `${account.FirstName} ${account.LastName}`,
+                  error: error.message
+                });
+                errorCount++;
+              }
+            }
+            
+            console.log(`\n🎉 Importation terminée !`);
+            console.log(`📊 Statistiques:`);
+            console.log(`  • Importés avec succès: ${importedCount}/${sheetData.length}`);
+            console.log(`  • Erreurs: ${errorCount}`);
+            
+            if (errors.length > 0) {
+              console.log(`\n❌ Détail des erreurs:`);
+              errors.forEach(err => {
+                console.log(`  • [${err.index}] ${err.name}: ${err.error}`);
+              });
+            }
+            
+            resolve({
+              imported: importedCount,
+              errors: errorCount,
+              details: errors
+            });
+            
+          } catch (error) {
+            console.error('❌ Erreur générale lors de l\'importation:', error);
+            reject(error);
+          }
+        })
+        .on('error', (error) => {
+          console.error('❌ Erreur lors de la lecture du fichier CSV:', error);
+          reject(error);
         });
-        errorCount++;
-      }
-    }
-    
-    console.log(`\n🎉 Importation terminée !`);
-    console.log(`📊 Statistiques:`);
-    console.log(`  • Importés avec succès: ${importedCount}/${sheetData.length}`);
-    console.log(`  • Erreurs: ${errorCount}`);
-    
-    if (errors.length > 0) {
-      console.log(`\n❌ Détail des erreurs:`);
-      errors.forEach(err => {
-        console.log(`  • [${err.index}] ${err.name}: ${err.error}`);
-      });
-    }
-    
-    return {
-      imported: importedCount,
-      errors: errorCount,
-      details: errors
-    };
+    });
     
   } catch (error) {
     console.error('❌ Erreur générale lors de l\'importation:', error);
@@ -235,15 +252,15 @@ function showHelp() {
 Usage: node importToSupabase.js [options]
 
 Options:
-  --file <path>    Chemin vers le fichier XLSX à importer
+  --file <path>    Chemin vers le fichier CSV à importer
   --help          Afficher cette aide
   
 Exemples:
-  node importToSupabase.js --file passports_data.xlsx
-  node importToSupabase.js --file ../assets/passports/passports_data.xlsx
+  node importToSupabase.js --file passports_data.csv
+  node importToSupabase.js --file ../assets/passports/passports_data.csv
 
 💾 FONCTION:
-Ce script importe les données d'un fichier XLSX de passeports
+Ce script importe les données d'un fichier CSV de passeports
 vers la table 'accounts' de Supabase avec génération d'emails uniques.
 `);
 }
@@ -293,7 +310,7 @@ if (isMainModule) {
       
       // Si aucun fichier n'est spécifié, utiliser le fichier par défaut
       if (!options.file) {
-        const defaultPath = path.resolve(__dirname, '..', 'assets', 'passports', 'passports_data.xlsx');
+        const defaultPath = path.resolve(__dirname, '..', 'assets', 'passports', 'passports_data.csv');
         console.log(`🔍 Aucun fichier spécifié, utilisation du fichier par défaut: ${defaultPath}`);
         options.file = defaultPath;
       }

@@ -27,6 +27,7 @@ export async function launchBrowser() {
     headless: false, // Mode non-headless pour voir le processus
     ignoreHTTPSErrors: true, // Pour ignorer les erreurs HTTPS via le proxy
     defaultViewport: null,
+    startMaximized: true, // Démarrer le navigateur maximisé
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
