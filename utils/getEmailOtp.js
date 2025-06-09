@@ -62,7 +62,7 @@ export async function getEmailOtp(email) {
       console.log(`Pas de code OTP : Tentative ${attempt}...`);
     }
     if (attempt < maxAttempts) {
-      await new Promise(resolve => setTimeout(resolve, 4000));
+      await new Promise(resolve => setTimeout(resolve, 6000));
     }
   }
   throw new Error('No OTP found after 3 attempts');

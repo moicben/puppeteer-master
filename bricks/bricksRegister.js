@@ -153,7 +153,7 @@ async function createBricksAccount(accountData) {
     // PAGE "Onboarding"
 
     // Step 1
-    await new Promise(resolve => setTimeout(resolve, 6000));
+    await new Promise(resolve => setTimeout(resolve, 7500));
     await page.click(".css-1mwxp4n");
     await new Promise(resolve => setTimeout(resolve, 3000));
     
@@ -254,12 +254,12 @@ async function createBricksAccount(accountData) {
     await pressKey(page, 'Space', 1);
     await pressKey(page, 'Tab', 4);
     await pressKey(page, 'Space', 1);
-    await new Promise(resolve => setTimeout(resolve, 3000));
+    await new Promise(resolve => setTimeout(resolve, 4500));
 
     // Steps 2-6 - Navigation through goals
     for (let i = 2; i <= 6; i++) {
       await page.click(".css-1mwxp4n");
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      await new Promise(resolve => setTimeout(resolve, 4500));
     }
 
     // Step 7 (Confirmation)
@@ -270,19 +270,19 @@ async function createBricksAccount(accountData) {
 
     // Step 1
     await page.click(".css-1mwxp4n");
-    await new Promise(resolve => setTimeout(resolve, 4000));
+    await new Promise(resolve => setTimeout(resolve, 4500));
 
     // Step 2
     await pressKey(page, 'Tab', 1);
     await pressKey(page, 'Space', 1);
     await pressKey(page, 'Tab', 6);
     await pressKey(page, 'Space', 1);
-    await new Promise(resolve => setTimeout(resolve, 4000));
+    await new Promise(resolve => setTimeout(resolve, 4500));
 
     // Steps 3-5
     for (let i = 3; i <= 5; i++) {
       await page.click(".css-1mwxp4n");
-      await new Promise(resolve => setTimeout(resolve, 4000));
+      await new Promise(resolve => setTimeout(resolve, 4500));
     }
 
     // Step 6
@@ -293,14 +293,14 @@ async function createBricksAccount(accountData) {
 
     await pressKey(page, 'Tab', 2);
     await pressKey(page, 'Space', 1);
-    await new Promise(resolve => setTimeout(resolve, 3000));
+    await new Promise(resolve => setTimeout(resolve, 4500));
 
     // Step 7 (Validation)
 
     await pressKey(page, 'Tab', 2);
     await pressKey(page, 'Space', 1);
 
-    await new Promise(resolve => setTimeout(resolve, 4000));
+    await new Promise(resolve => setTimeout(resolve, 4500));
     await page.mouse.click(200, 200);
     await new Promise(resolve => setTimeout(resolve, 1000));
     await pressKey(page, 'Tab', 2);
