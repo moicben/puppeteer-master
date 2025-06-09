@@ -234,6 +234,7 @@ async function checkAllPendingAccounts() {
     console.log('📊 Résumé des résultats:');
     console.log(`  • Comptes traités: ${processedCount}/${pendingAccounts.length}`);
     console.log(`  • Comptes vérifiés: ${verifiedCount}`);
+    console.log(`  • Comptes en vérification: ${pendingAccounts.length - processedCount}`);
     console.log(`  • Comptes rejetés: ${rejectedCount}`);
     console.log(`  • Erreurs: ${errorCount}`);
 
