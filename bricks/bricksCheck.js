@@ -156,43 +156,54 @@ function parseCommandLineArgs() {
     return { mode: 'all' };
   }
   
-  const email = args[0];
+  const firstArg = args[0];
+  
+  // Vérifier si c'est une commande pour un statut spécifique
+  if (firstArg === 'soon' || firstArg === 'pending') {
+    return { mode: 'status', status: firstArg };
+  }
   
   // Validation basique de l'email
-  if (email && email.includes('@')) {
-    return { mode: 'specific', email: email };
+  if (firstArg && firstArg.includes('@')) {
+    return { mode: 'specific', email: firstArg };
   } else {
-    console.log('❌ Format d\'email invalide');
-    console.log('Usage: node bricksCheck.js [email@exemple.com]');
-    console.log('       node bricksCheck.js (pour vérifier tous les comptes pending)');
+    console.log('❌ Format d\'argument invalide');
+    console.log('Usage: node bricksCheck.js [options]');
+    console.log('Options:');
+    console.log('  [email@exemple.com]  Vérifier un compte spécifique par email');
+    console.log('  pending              Vérifier tous les comptes avec le statut "pending"');
+    console.log('  soon                 Vérifier tous les comptes avec le statut "soon"');
+    console.log('  (aucun argument)     Vérifier tous les comptes "pending" par défaut');
     process.exit(1);
   }
 }
-// Fonction principale pour traiter tous les comptes avec le statut "pending"
-async function checkAllPendingAccounts() {
+
+// Fonction pour traiter tous les comptes avec un statut spécifique
+async function checkAccountsByStatus(status) {
   try {
-    console.log('📊 Récupération des comptes avec le statut "pending"...');
+    console.log(`📊 Récupération des comptes avec le statut "${status}"...`);
     
-    // Récupérer tous les comptes avec le statut "pending"
-    const pendingAccounts = await accountsService.getAccounts('pending', 100, 0);
+    // Récupérer tous les comptes avec le statut spécifié
+    const accounts = await accountsService.getAccounts(status, 100, 0);
     
-    if (!pendingAccounts || pendingAccounts.length === 0) {
-      console.log('ℹ️ Aucun compte avec le statut "pending" trouvé');
+    if (!accounts || accounts.length === 0) {
+      console.log(`ℹ️ Aucun compte avec le statut "${status}" trouvé`);
       return;
     }
 
-    console.log(`📋 ${pendingAccounts.length} compte(s) à vérifier...`);
+    console.log(`📋 ${accounts.length} compte(s) à vérifier...`);
 
     const results = [];
     let processedCount = 0;
     let verifiedCount = 0;
     let rejectedCount = 0;
+    let soonCount = 0;
     let errorCount = 0;
 
     // Traiter chaque compte un par un
-    for (const account of pendingAccounts) {
+    for (const account of accounts) {
       try {
-        console.log(`\n⏳ [${processedCount + 1}/${pendingAccounts.length}] Traitement en cours...`);
+        console.log(`\n⏳ [${processedCount + 1}/${accounts.length}] Traitement en cours...`);
         
         const result = await checkBricksAccount(account);
         
@@ -214,10 +225,11 @@ async function checkAllPendingAccounts() {
         // Compter les résultats
         if (result.status === 'verified') verifiedCount++;
         else if (result.status === 'rejected') rejectedCount++;
+        else if (result.status === 'soon') soonCount++;
         else if (result.status === 'error') errorCount++;
 
         // Attendre un peu entre chaque vérification pour éviter la détection
-        if (processedCount < pendingAccounts.length) {
+        if (processedCount < accounts.length) {
           console.log('⏱️ Attente de 3 secondes avant le prochain compte...');
           await new Promise(resolve => setTimeout(resolve, 3000));
         }
@@ -232,15 +244,16 @@ async function checkAllPendingAccounts() {
     // Afficher le résumé
     console.log('\n🎉 Vérification terminée !');
     console.log('📊 Résumé des résultats:');
-    console.log(`  • Comptes traités: ${processedCount}/${pendingAccounts.length}`);
+    console.log(`  • Comptes traités: ${processedCount}/${accounts.length}`);
     console.log(`  • Comptes vérifiés: ${verifiedCount}`);
-    console.log(`  • Comptes en vérification: ${pendingAccounts.length - processedCount}`);
+    console.log(`  • Comptes en vérification (soon): ${soonCount}`);
     console.log(`  • Comptes rejetés: ${rejectedCount}`);
     console.log(`  • Erreurs: ${errorCount}`);
 
     return {
       processed: processedCount,
       verified: verifiedCount,
+      soon: soonCount,
       rejected: rejectedCount,
       errors: errorCount,
       details: results
@@ -250,6 +263,11 @@ async function checkAllPendingAccounts() {
     console.error('❌ Erreur générale lors de la vérification:', error);
     throw error;
   }
+}
+
+// Fonction principale pour traiter tous les comptes avec le statut "pending" (pour compatibilité)
+async function checkAllPendingAccounts() {
+  return await checkAccountsByStatus('pending');
 }
 
 // Exporter les fonctions
@@ -266,8 +284,11 @@ if (isMainModule) {
       if (args.mode === 'specific') {
         console.log(`🎯 Mode spécifique: vérification du compte ${args.email}`);
         await checkSpecificAccount(args.email);
+      } else if (args.mode === 'status') {
+        console.log(`📊 Mode statut: vérification de tous les comptes "${args.status}"`);
+        await checkAccountsByStatus(args.status);
       } else {
-        console.log('📊 Mode global: vérification de tous les comptes pending');
+        console.log('📊 Mode par défaut: vérification de tous les comptes pending');
         await checkAllPendingAccounts();
       }
     } catch (error) {
