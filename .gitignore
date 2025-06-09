@@ -5,7 +5,10 @@
 /node_modules
 /cto-dashboard/node_modules
 
-# puppeteer / chrome
+# identities
+/assets/passports/templates
+
+# puppeteer + chrome
 /chrome-profil
 /screenshots
 
