@@ -109,6 +109,8 @@ async def main():
         'task': task,
         'llm': llm,
         'browser_session': browser_session,
+        'enable_memory': False,  # Par défaut désactivé
+        
     }
     
     # Activer la mémoire si disponible

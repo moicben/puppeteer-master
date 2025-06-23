@@ -41,8 +41,8 @@ export async function launchBrowser() {
       '--disable-breakpad',
       '--disable-extensions',
       '--disable-gpu',
-      //`--proxy-server=${proxyAddress}:${proxyPort}`,
-      //`--user-data-dir=${process.env.PUPPETEER_USER_DATA_DIR || '/root/chrome-profile/Default'}`, // Chemin vers le profil Chrome
+      // `--proxy-server=${proxyAddress}:${proxyPort}`,
+      `--user-data-dir=${process.env.PUPPETEER_USER_DATA_DIR || '/root/chrome-profile/Default'}`, // Chemin vers le profil Chrome
     ],
     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/google-chrome-stable', // Chemin vers l'exécutable Chrome
   });

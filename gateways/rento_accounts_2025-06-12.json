@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "processedAt": "2025-06-12T18:03:30.962Z",
+    "serviceName": "rento",
+    "totalAccounts": 1,
+    "successfulAccounts": 0,
+    "errors": 1
+  },
+  "accounts": [
+    {
+      "accountData": {
+        "id": 270,
+        "email": "barthelemy.delmas@t6.com",
+        "first_name": "Barthelemy",
+        "last_name": "Delmas",
+        "phone": "0649694841",
+        "address": "132 résidence du Parc",
+        "city": "Caen",
+        "postal_code": "14000",
+        "birth_date": "01 11 1983",
+        "birth_place": "Caen",
+        "sex": "M",
+        "status": "new",
+        "created_at": "2025-06-09T15:17:11.642+00:00",
+        "updated_at": "2025-06-12T17:59:12.078+00:00",
+        "country": "France",
+        "document_number": "PI2265571",
+        "expiry_date": "17 06 2027",
+        "issue_date": "19 06 2017",
+        "issuing_state": "Préfecture de la Somme",
+        "mrz1": "P<FRADELMAS<<BARTHELEMY<<<<<<<<<<<<<<<<<<<<<",
+        "mrz2": "PI22655715FRA8301116MaNaNaN5<<<<<<<<<<<<<<06",
+        "comment": "Début de l'inscription rento - 2025-06-12T17:59:12.077Z",
+        "nationality": "FRANCAIS",
+        "error_at": null,
+        "service": "rento",
+        "checked_at": null
+      },
+      "email": "barthelemy.delmas@t6.com",
+      "phone": "0649694841",
+      "address": {
+        "address": "132 résidence du Parc",
+        "city": "Caen",
+        "postal": "14000"
+      },
+      "birthFormatted": "01 11 1983",
+      "status": "error",
+      "comment": "No element found for selector: a.card.document-card",
+      "processedAt": "2025-06-12T18:03:24.834Z"
+    }
+  ]
+}
