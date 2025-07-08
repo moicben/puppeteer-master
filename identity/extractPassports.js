@@ -11,7 +11,7 @@ const openai = new OpenAI({
 });
 
 // Répertoire des passeports
-const passportsDir = path.resolve('./assets/passports');
+const passportsDir = path.resolve('./assets/passports/proceed');
 
 // Fonction pour analyser un passeport avec GPT-4.1 (optimisée pour la vitesse)
 async function analyzePassport(imagePath, maxRetries = 4) {
