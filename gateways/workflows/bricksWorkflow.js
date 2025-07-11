@@ -87,7 +87,10 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   // Step 4 - Address
   await pressKey(page, 'Tab', 2);
   await page.keyboard.type(`${preparedData.postal}`, {delay: 100});
+  await pressKey(page, 'Tab', 1);
+  await new Promise(resolve => setTimeout(resolve, 2000));
   await page.keyboard.type(`${preparedData.city}`, {delay: 100});
+  await new Promise(resolve => setTimeout(resolve, 2000));
 
   // Click sur le pixel 200 x 200 de la page
   await page.mouse.click(200, 200);
