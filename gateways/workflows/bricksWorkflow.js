@@ -38,17 +38,17 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   // Fill OTP Code
   await pressKey(page, 'Tab', 5);
   await page.keyboard.type(`${otp}`, {delay: 200});
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise(resolve => setTimeout(resolve, 3000));
   await pressKey(page, 'Enter', 1);
 
   // PAGE "Onboarding"
 
-  // Step 1
-  await new Promise(resolve => setTimeout(resolve, 7500));
+  // Step 0 : Accepte les conditions d'utilisation
+  await new Promise(resolve => setTimeout(resolve, 9500));
   await page.click(".css-1mwxp4n");
   await new Promise(resolve => setTimeout(resolve, 3000));
   
-  // Step 2 - Personal Information
+  // Step 1 - Personal Information
   // Adapter la navigation selon le sexe (F = Femme, M = Homme)
   const isWoman = accountData.sex === 'F';
   
@@ -64,16 +64,22 @@ export async function bricksWorkflow(page, accountData, preparedData) {
     await pressKey(page, 'Tab', 2);
   }
   
+  // Step 2 - First Name and Last Name
   await page.keyboard.type(`${accountData.first_name}`, {delay: 100});
   await page.keyboard.press('Tab');
+  await new Promise(resolve => setTimeout(resolve, 2000));
   await page.keyboard.type(`${accountData.last_name}`, {delay: 100});
   await pressKey(page, 'Tab', 1);
+  await new Promise(resolve => setTimeout(resolve, 1000));
   await pressKey(page, 'Enter', 1);
   await new Promise(resolve => setTimeout(resolve, 3000));
 
   // Step 3 - Phone Number
   await pressKey(page, 'Tab', 2);
-  await page.keyboard.type(`${preparedData.phone}`, {delay: 100});
+  await page.keyboard.type(`0612357890`, {delay: 100});
+  
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
   await pressKey(page, 'Tab', 1);
   await pressKey(page, 'Enter', 1);
   await new Promise(resolve => setTimeout(resolve, 5000));
