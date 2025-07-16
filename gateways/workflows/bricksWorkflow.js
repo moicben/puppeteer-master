@@ -88,7 +88,7 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   await pressKey(page, 'Tab', 2);
   await page.keyboard.type(`${preparedData.postal}`, {delay: 100});
   await pressKey(page, 'Tab', 1);
-  await new Promise(resolve => setTimeout(resolve, 2000));
+  await new Promise(resolve => setTimeout(resolve, 1000));
   await page.keyboard.type(`${preparedData.city}`, {delay: 100});
   await new Promise(resolve => setTimeout(resolve, 2000));
 
