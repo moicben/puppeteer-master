@@ -42,6 +42,7 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   await pressKey(page, 'Enter', 1);
 
   // PAGE "Onboarding"
+  console.log('Onboarding...');
 
   // Step 0 : Accepte les conditions d'utilisation
   await new Promise(resolve => setTimeout(resolve, 9500));
@@ -131,6 +132,8 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   }
 
   // Upload des fichiers d'identité avec la méthode correcte
+  console.log('Uploading ID file...');
+
   const fileInputs = await page.$$('input[type="file"]');
   if (fileInputs.length > 0) {
     await fileInputs[0].uploadFile(preparedData.idPath);
@@ -147,6 +150,7 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   await new Promise(resolve => setTimeout(resolve, 4000));
   
   // Page "Goals / Funds"
+  console.log('Goals / Funds...');
 
   // Step 1
   await pressKey(page, 'Tab', 1);
@@ -166,6 +170,7 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   await pressKey(page, 'Space', 1);
 
   // PAGE "Experience"
+  console.log('Experience...');
 
   // Step 1
   await page.click(".css-1mwxp4n");
