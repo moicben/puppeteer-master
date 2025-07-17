@@ -5,10 +5,7 @@
   "main": "bricksRegister.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cto": "node orchestrator/cto-agent.js",
-    "cto-dev": "node --inspect orchestrator/cto-agent.js",
-    "cto-web": "node orchestrator/cto-web-agent.js",
-    "cto-web-dev": "node --inspect orchestrator/cto-web-agent.js"
+    "bricks": "node gateways/bricks/bricksRegister.js"
   },
   "author": "",
   "license": "ISC",

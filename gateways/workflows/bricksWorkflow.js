@@ -20,7 +20,7 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   await pressKey(page, 'Tab', 3);
   await pressKey(page, 'Space', 1);
 
-  await new Promise(resolve => setTimeout(resolve, 2000));
+  await new Promise(resolve => setTimeout(resolve, 3000));
   await pressKey(page, 'Enter', 1);
 
   // Get Email OTP Code
@@ -43,13 +43,15 @@ export async function bricksWorkflow(page, accountData, preparedData) {
   await pressKey(page, 'Tab', 5);
   await page.keyboard.type(`${otp}`, {delay: 200});
   await new Promise(resolve => setTimeout(resolve, 3000));
+
   await pressKey(page, 'Enter', 1);
+  console.log('OTP Submited, waiting for 9s...');
+  await new Promise(resolve => setTimeout(resolve, 9000));
 
   // PAGE "Onboarding"
   console.log('Onboarding...');
 
   // Step 0 : Accepte les conditions d'utilisation
-  await new Promise(resolve => setTimeout(resolve, 9500));
   await page.click(".css-1mwxp4n");
   await new Promise(resolve => setTimeout(resolve, 3000));
   
@@ -81,6 +83,7 @@ export async function bricksWorkflow(page, accountData, preparedData) {
 
   // Step 3 - Phone Number
   await pressKey(page, 'Tab', 2);
+  // await pressKey(page, 'Tab', 1); BROWSERBASE FIX
   await page.keyboard.type(`0612357890`, {delay: 100});
   
 
@@ -103,10 +106,15 @@ export async function bricksWorkflow(page, accountData, preparedData) {
 
   await pressKey(page, 'Tab', 1);
   await page.keyboard.type(preparedData.address, { delay: 50 });
+  await pressKey(page, 'Tab', 1);
 
-  await pressKey(page, 'Tab', 4);
+  // (Re) Click sur le pixel 200 x 200 de la page -> Defocus secure
+  await page.mouse.click(200, 200);
+  await new Promise(resolve => setTimeout(resolve, 2000));
+
+  await pressKey(page, 'Tab', 5);
   await pressKey(page, 'Space', 1);
-  await new Promise(resolve => setTimeout(resolve, 4000));
+  await new Promise(resolve => setTimeout(resolve, 2000));
 
   // Step 5 - Birth Date and Place
   await pressKey(page, 'Tab', 1);

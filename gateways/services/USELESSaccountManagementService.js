@@ -1,7 +1,7 @@
 import { AccountsService } from '../config/supabase.js';
 import { EmailService } from './emailService.js';
 import { PassportDataService } from './passportDataService.js';
-import { BricksNavigationService } from './bricksNavigationService.js';
+import { BricksNavigationService } from './USELESSbricksNavigationService.js';
 
 export class AccountManagementService {
   

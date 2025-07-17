@@ -92,7 +92,7 @@ export class BricksNavigationService {
 
   // Page Onboarding - Numéro de téléphone
   static async fillPhoneNumber(page, phone) {
-    await pressKey(page, 'Tab', 2);
+    await pressKey(page, 'Tab', 1);
     await page.keyboard.type(`${phone}`, { delay: 100 });
     await pressKey(page, 'Tab', 1);
     await pressKey(page, 'Enter', 1);
