@@ -54,31 +54,36 @@ async function checkBricksAccount(accountData) {
     // Attendre d'être redirigé vers le dashboard
     await new Promise(resolve => setTimeout(resolve, 9000));
 
-    // Vérifier l'URL actuelle pour s'assurer qu'on est connecté
+    // S'assurer que l'URL actuelle ne contient pas "login"
     const currentUrl = page.url();
     console.log('URL actuelle:', currentUrl);
-
-    // Vérifier la présence de la bannière "waitBanner"
-    const waitBanner = await page.$('.css-dxjesb');
-    
-    if (waitBanner) {
-      console.log('⏳ Bannière "waitBanner" trouvée - Compte en cours de traitement');
-      status = 'soon';
-      comment = 'Account in progress: waitBanner element found';
+    if (currentUrl.includes('login')) {
+      console.log('🔒 Error login');
+      status = 'error';
+      comment = "Couldn't login browser maybe blocked or not working";
     } else {
-      // Vérifier la présence de la bannière "errorBanner"
-      const errorBanner = await page.$('.css-1s9durk');
+      // Vérifier la présence de la bannière "waitBanner"
+      const waitBanner = await page.$('.css-dxjesb');
       
-      if (errorBanner) {
-      console.log('❌ Bannière "errorBanner" trouvée - Compte rejeté');
-      status = 'rejected';
-      comment = 'Account rejected: errorBanner element found';
+      if (waitBanner) {
+        console.log('⏳ Bannière "waitBanner" trouvée - Compte en cours de traitement');
+        status = 'soon';
+        comment = 'Account in progress: waitBanner element found';
       } else {
-      console.log('✅ Aucune bannière trouvée - Compte vérifié');
-      status = 'verified';
-      comment = 'Account verified: no banner elements found on dashboard';
+        // Vérifier la présence de la bannière "errorBanner"
+        const errorBanner = await page.$('.css-1s9durk');
+        
+        if (errorBanner) {
+        console.log('❌ Bannière "errorBanner" trouvée - Compte rejeté');
+        status = 'rejected';
+        comment = 'Account rejected: errorBanner element found';
+        } else {
+        console.log('✅ Aucune bannière trouvée - Compte vérifié');
+        status = 'verified';
+        comment = 'Account verified: no banner elements found on dashboard';
+        }
       }
-    }
+    } 
 
     // Prendre une capture d'écran pour documentation
     const screenshotsDir = path.join(__dirname, '..', 'screenshots');

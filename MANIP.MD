@@ -1,3 +1,5 @@
+# ---------- BRICKS REGISTER ------------ #
+
 # 1. (Google Sheets) Prepare batch for passports_data.csv
 # 2. node identity/importToSupabase.js
 # 3. (Photoshop) Import Data Sets = passports_data.csv
@@ -10,3 +12,5 @@
 # 8.2 (Droplet) cd puppeteer-master
 # 8.3 (Droplet) git pull / push (Local)
 # 9. (Droplet or Local) node gateways/bricks/bricksRegister.js 
+
+
