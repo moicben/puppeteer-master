@@ -2,7 +2,7 @@
 
 # 1. (Google Sheets) Prepare batch for passports_data.csv
 # 2. node identity/importToSupabase.js
-# 3. (Photoshop) Import Data Sets = passports_data.csv
+# 3. (Photoshop) Image > Variables Import Data Sets = passports_data.csv (UTF-8 mode)
 # 4. (Photoshop) File > Exports > Data Sets to Files (PSD)
 # 5. (Photoshop) File > Scripts > Image Processor 
 # 6. (Finder) Place generated JPEG in ../proceed + (facultative) Delete PSDs 

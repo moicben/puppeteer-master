@@ -271,7 +271,7 @@ export async function processAccountsByService(serviceName, workflowFunction) {
         // Pause entre les créations de compte pour éviter la détection
         if (i < accounts.length - 1) {
           console.log('⏳ Pause de 10 secondes avant le prochain compte...');
-          await new Promise(resolve => setTimeout(resolve, 10000));
+          await new Promise(resolve => setTimeout(resolve, 1000));
         }
       } catch (error) {
         console.error(`❌ Erreur fatale pour ${account.first_name} ${account.last_name}:`, error);

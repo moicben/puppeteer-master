@@ -25,6 +25,10 @@ export async function bricksWorkflow(page, accountData, preparedData) {
 
   // Get Email OTP Code
   console.log('Getting OTP Code...');
+
+  // Screenshot de la page
+  await page.screenshot({ path: 'screenshots/bricks_otp.png' });
+
   await new Promise(resolve => setTimeout(resolve, 5000));
 
   const otp = await getEmailOtp(preparedData.email);
