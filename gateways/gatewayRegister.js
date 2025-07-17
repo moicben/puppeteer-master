@@ -8,7 +8,7 @@ import { launchBrowser } from '../utils/puppeteer/launchBrowser.js';
 import { getRandomDomain } from '../utils/getRandomDomain.js';
 import { getEmailOtp } from '../utils/getEmailOtp.js';
 import { AccountsService } from './config/supabase.js';
-import { launchBrowser } from '../utils/BrowserBase/launchBrowser.js';
+import { launchBrowser } from '../utils/puppeteer/launchBrowser.js';
 
 // Configuration
 const __filename = fileURLToPath(import.meta.url);
