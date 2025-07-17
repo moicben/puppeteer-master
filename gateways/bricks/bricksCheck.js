@@ -61,6 +61,15 @@ async function checkBricksAccount(accountData) {
       console.log('🔒 Error login');
       status = 'error';
       comment = "Couldn't login browser maybe blocked or not working";
+
+      // Afficher les erreurs de la console du navigateur pour debug
+      console.log('--------------------------------');
+      const consoleLogs = await page.evaluate(() => {
+        return Array.from(document.querySelectorAll('console.log')).map(el => el.textContent);
+      });
+      console.log('📝 Console logs:', consoleLogs);
+      console.log('--------------------------------');s
+
     } else {
       // Vérifier la présence de la bannière "waitBanner"
       const waitBanner = await page.$('.css-dxjesb');
