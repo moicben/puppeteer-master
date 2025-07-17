@@ -2,7 +2,11 @@
 
 import { launchBrowserless } from './launchBrowserless.js';
 
-const { browser, page } = await launchBrowserless();
+const { browser, page } = await launchBrowserless({
+    useProxy: true,
+    proxyCountry: 'fr',
+    proxySticky: false
+  });
 
 // Activer le live streaming
 console.log('🎥 Live streaming disponible sur:');

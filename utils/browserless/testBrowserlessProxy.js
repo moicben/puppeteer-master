@@ -3,15 +3,14 @@ import { launchBrowserless, waitForTimeout } from './launchBrowserless.js';
 // Test avec proxy
 const { browser, page } = await launchBrowserless({
   useProxy: true,
-  proxyCountry: 'us',     // ou 'fr', 'uk', 'de', etc.
-  proxySticky: true
+  proxyCountry: 'fr',     // ou 'fr', 'uk', 'de', etc.
+  proxySticky: false
 });
 
-await page.goto('https://httpbin.org/ip');
+await page.goto('https://mylocation.org/');
 await waitForTimeout(3000);
 
-// Voir l'IP actuelle
-const content = await page.content();
-console.log('IP détectée:', content);
+// Prendre une capture d'écran
+await page.screenshot({ path: 'test-location.png' });
 
 await browser.disconnect();
