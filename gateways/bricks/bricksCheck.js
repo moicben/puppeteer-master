@@ -5,7 +5,7 @@ import { dirname } from 'path';
 import dotenv from 'dotenv';
 
 import { pressKey } from '../../utils/puppeteer/pressKey.js';
-import { launchBrowser } from '../../utils/puppeteer/launchBrowser.js';
+import { launchBrowserless } from '../../utils/browserless/launchBrowserless.js';
 import { AccountsService } from '../config/supabase.js';
 
 // Configuration
@@ -26,7 +26,11 @@ async function checkBricksAccount(accountData) {
   console.log(`\n🔍 Vérification du compte: ${accountData.first_name} ${accountData.last_name} - ${accountData.email}`);
   
   // Lancer le navigateur Puppeteer optimisé
-  const { browser, page } = await launchBrowser();
+  const { browser, page } = await launchBrowserless({
+    useProxy: true,
+    proxyCountry: 'fr',
+    proxySticky: false
+  });
   
   let status = 'pending';
   let comment = 'Checking account status';
@@ -38,17 +42,17 @@ async function checkBricksAccount(accountData) {
 
     // Rechercher les champs de connexion
     const emailInput = await page.$('input[type="email"]');
-    await new Promise(resolve => setTimeout(resolve, 1500));
     const passwordInput = await page.$('input[type="password"]');
+    await new Promise(resolve => setTimeout(resolve, 1000));
     
     if (!emailInput || !passwordInput) {
       throw new Error('Champs de connexion non trouvés sur la page');
     }
 
     console.log('Saisie des identifiants de connexion...');
-    await page.type('input[type="email"]', accountData.email, { delay: 100 });
-    await page.type('input[type="password"]', 'Cadeau2014!', { delay: 100 });    // Cliquer sur le bouton de connexion ou appuyer sur Entrée
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await page.type('input[type="email"]', accountData.email, { delay: 200 });
+    await page.type('input[type="password"]', 'Cadeau2014!', { delay: 150 });    // Cliquer sur le bouton de connexion ou appuyer sur Entrée
+    await new Promise(resolve => setTimeout(resolve, 2500));
     await pressKey(page, 'Enter', 1);
 
     // Attendre d'être redirigé vers le dashboard
@@ -59,8 +63,8 @@ async function checkBricksAccount(accountData) {
     console.log('URL actuelle:', currentUrl);
     if (currentUrl.includes('login')) {
       console.log('🔒 Error login');
-      status = 'error';
-      comment = "Couldn't login browser maybe blocked or not working";
+      status = 'blocked';
+      comment = "Couldn't login, browser was been blocked...";
 
       // Afficher les erreurs de la console du navigateur pour debug
       console.log('--------------------------------');
@@ -112,7 +116,7 @@ async function checkBricksAccount(accountData) {
     comment = `Error during verification: ${error.message}`;
   } finally {
     // Fermer le navigateur
-    await browser.close();
+    await browser.disconnect();
   }
 
   return {
