@@ -68,7 +68,7 @@ async function checkBricksAccount(accountData) {
         return Array.from(document.querySelectorAll('console.log')).map(el => el.textContent);
       });
       console.log('📝 Console logs:', consoleLogs);
-      console.log('--------------------------------');s
+      console.log('--------------------------------');
 
     } else {
       // Vérifier la présence de la bannière "waitBanner"
